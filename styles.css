@@ -147,4 +147,20 @@ body {
     body{
         background-color: red;
     }
+
+    .container{
+        display: flex;
+    }
+
+    .container-image{
+        background-color: blue;
+    }
+
+    .container .container-image{
+        background-image: url("/images/image-product-desktop.jpg");
+    }
+
+    .container .container-image img{
+        height: 200px;
+    }
 }
