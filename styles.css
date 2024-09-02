@@ -142,3 +142,9 @@ body {
     letter-spacing: 1px;
 }
 
+
+@media all  and (min-width: 900px) {
+    body{
+        background-color: red;
+    }
+}
