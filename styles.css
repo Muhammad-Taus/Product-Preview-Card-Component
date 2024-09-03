@@ -19,7 +19,8 @@
     box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
     height: 100%;
 }
 
@@ -47,30 +48,36 @@ body {
 
 }
 
-.container{
+.container {
     max-width: 335px;
     background-color: var(--white);
     border-radius: 10px;
-    
+
 }
 
-/* .container .container-image{
-    background-color: aqua;
 
-} */
-
-.container .container-image img {
+.container .container-image {
+    background-image: url("/images/image-product-desktop.jpg");
+    background-size: cover; /* or contain */
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
-    height: auto; 
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+  }
+
+/* .container .container-image img {
+    width: 100%;
+    height: auto;
     display: block;
     border-radius: 10px 10px 0 0;
-}
+} */
 
-.container .container-content{
+.container .container-content {
     padding: 20px;
 }
 
-.container .container-content h3{
+.container .container-content h3 {
     color: var(--darkGrayishBlue);
     font-size: 12px;
     font-weight: 500;
@@ -78,7 +85,7 @@ body {
     letter-spacing: 3px;
 }
 
-.container .container-content h1{
+.container .container-content h1 {
     padding: 15px 0;
     line-height: 1;
     font-family: "Fraunces", serif;
@@ -87,19 +94,19 @@ body {
     font-style: normal;
 }
 
-.container .container-content p{
+.container .container-content p {
     color: var(--darkGrayishBlue);
     line-height: 1.6;
 }
 
-.container .container-content .perfume-price{
+.container .container-content .perfume-price {
     padding-top: 20px;
     padding-bottom: 15px;
     display: flex;
     align-items: center;
 }
 
-.container .container-content .perfume-price span:first-child{
+.container .container-content .perfume-price span:first-child {
     color: var(--darkCyan);
     display: inline-block;
     font-family: "Fraunces", serif;
@@ -109,14 +116,14 @@ body {
     font-size: 30px;
 }
 
-.container .container-content .perfume-price span:last-child{
+.container .container-content .perfume-price span:last-child {
     color: var(--darkGrayishBlue);
     text-decoration: line-through;
     display: inline-block;
     margin-left: 15px;
 }
 
-.container .container-content button{
+.container .container-content button {
     background-color: var(--darkCyan);
     color: var(--white);
     width: 100%;
@@ -128,39 +135,34 @@ body {
     border-radius: 5px;
 }
 
-.container .container-content button:hover{
+.container .container-content button:hover {
     cursor: pointer;
     background-color: var(--darkCyanHover);
 }
 
-.container .container-content button svg{
+.container .container-content button svg {
     margin-right: 10px;
 }
 
-.container .container-content button span{
+.container .container-content button span {
     font-weight: 700;
     letter-spacing: 1px;
 }
 
 
-@media all  and (min-width: 900px) {
-    body{
-        background-color: red;
-    }
+@media all and (min-width: 1440px) {
 
-    .container{
+    .container {
         display: flex;
+        max-width: 600px;
     }
 
-    .container-image{
-        background-color: blue;
-    }
 
-    .container .container-image{
+    .container .container-image {
         background-image: url("/images/image-product-desktop.jpg");
-    }
-
-    .container .container-image img{
-        height: 200px;
-    }
+        width: 900px;
+        height: auto;
+        border-radius: 10px 0 0 10px;
+      }
+      
 }
